@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D16CC2DA16EDD07D0035D99E /* MAHideSlideView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F30C0416D4D05C00499636 /* MAHideSlideView-Info.plist */; };
 		D17836F616D76DF200B7FBFC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17836F516D76DF200B7FBFC /* QuartzCore.framework */; };
 		D17836F916D7B0A200B7FBFC /* IntesysImgUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D17836F816D7B0A200B7FBFC /* IntesysImgUtils.m */; };
 		D17836FC16D7DB1500B7FBFC /* UIApplication+ScreenDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D17836FB16D7DB1400B7FBFC /* UIApplication+ScreenDimensions.m */; };
@@ -282,6 +283,7 @@
 				D178374E16DBAD7700B7FBFC /* small_hidden@2x.png in Resources */,
 				D178374F16DBAD7700B7FBFC /* tileable_wood_texture.png in Resources */,
 				D178375016DBAD7700B7FBFC /* tileable_wood_texture@2x.png in Resources */,
+				D16CC2DA16EDD07D0035D99E /* MAHideSlideView-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,11 +386,15 @@
 		D1F30C1D16D4D05C00499636 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SlideViewControl/MAHideSlideView-Prefix.pch";
-				INFOPLIST_FILE = "SlideViewControl/MAHideSlideView-Info.plist";
+				GCC_PREFIX_HEADER = "SlideViewDemo/MAHideSlideView-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SlideViewDemo/MAHideSlideView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = MAHideSlideView;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -396,11 +402,15 @@
 		D1F30C1E16D4D05C00499636 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SlideViewControl/MAHideSlideView-Prefix.pch";
-				INFOPLIST_FILE = "SlideViewControl/MAHideSlideView-Info.plist";
+				GCC_PREFIX_HEADER = "SlideViewDemo/MAHideSlideView-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SlideViewDemo/MAHideSlideView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = MAHideSlideView;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
